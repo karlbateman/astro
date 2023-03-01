@@ -1,0 +1,32 @@
+{
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.rulers": [119],
+    "editor.wordWrapColumn": 120,
+    "cSpell.language": "en-GB",
+    "go.lintTool": "revive",
+    "go.lintFlags": [
+        "--exclude vendor/...",
+        "--config=${workspaceRoot}/revive.toml"
+    ],
+    "go.inlayHints.parameterNames": false,
+    "go.inlayHints.rangeVariableTypes": false,
+    "go.inlayHints.functionTypeParameters": false,
+    "go.inlayHints.constantValues": false,
+    "go.inlayHints.compositeLiteralTypes": false,
+    "go.inlayHints.compositeLiteralFields": false,
+    "go.inlayHints.assignVariableTypes": false,
+    "[go]": {
+        "editor.defaultFormatter": "golang.go",
+        "editor.foldingImportsByDefault": false,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+            "source.fixAll": true
+        },
+        "editor.suggest.snippetsPreventQuickSuggestions": false
+    },
+    "[toml]": {
+        "editor.defaultFormatter": "tamasfe.even-better-toml"
+    }
+}
